@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Blog Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <header class="dark-bg">
+        <nav class="navbar">
+            <div class="blog-logo">
+                <a href="index.html">Art Blog</a>
+            </div>
+
+            <ul class="right-nav">
+                <li class="nav-li hideOnMobile">
+                    <a href="#" class="nav-items">home</a>
+                </li>
+                <li class="nav-li hideOnMobile">
+                    <a href="#" class="nav-items">design</a>
+                </li>
+                <li class="nav-li hideOnMobile">
+                    <a href="#" class="nav-items">blog</a>
+                </li>
+                <li class="nav-li hideOnMobile">
+                    <a href="#" class="nav-items">contact</a>
+                </li>
+                <li onclick="showSidebar()" class="nav-li menu-btn showOnMobile">
+                    <a href="#" class="nav-items"><i class="fa fa-navicon"></i></a>
+                </li>
+            </ul>
+            <ul class="right-nav sidebar">
+                <li onclick="hideSidebar()" class="nav-li">
+                    <a href="#" class="nav-items"><i class="fa fa-close"></i></a>
+                </li>
+                <li class="nav-li">
+                    <a href="#" class="nav-items">home</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#" class="nav-items">design</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#" class="nav-items">blog</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#" class="nav-items">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="tag-conatiner">
+                <div class="tag-line">Art Blog Page</div>
+                <div class="tag-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+                    perspiciatis.</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="recent-art p-7">
+            <div class="captions">
+                <div class="main-heading">Recent Arts & Designs</div>
+                <div class="sub-heading">Recent Art & Designs of the blog</div>
+            </div>
+            <div class="blog-conatiner">
+                <div class="blog-block">
+                    <div class="blog-image-block">
+                        <img src="assets/images/art-design-1.jpg" alt="" class="blog-image">
+                        <span class="blog-fav"><i class="fa fa-heart-o"></i> 22</span>
+                    </div>
+                    <div class="blog-text"><a href="" class="blog-link">Make an Awesome Art Portfolio For College Or
+                            University</a></div>
+                </div>
+                <div class="blog-block">
+                    <div class="blog-image-block">
+                        <img src="assets/images/art-design-2.jpg" alt="" class="blog-image">
+                        <span class="blog-fav"><i class="fa fa-heart-o"></i> 22</span>
+                    </div>
+                    <div class="blog-text"><a href="" class="blog-link">Make an Awesome Art Portfolio For College Or
+                            University</a></div>
+                </div>
+                <div class="blog-block">
+                    <div class="blog-image-block">
+                        <img src="assets/images/art-design-3.jpg" alt="" class="blog-image">
+                        <span class="blog-fav"><i class="fa fa-heart-o"></i> 22</span>
+                    </div>
+                    <div class="blog-text"><a href="" class="blog-link">Make an Awesome Art Portfolio For College Or
+                            University</a></div>
+                </div>
+                <!-- </div>
+            <div class="blog-conatiner"> -->
+                <div class="blog-block">
+                    <div class="blog-image-block">
+                        <img src="assets/images/art-design-4.jpg" alt="" class="blog-image">
+                        <span class="blog-fav"><i class="fa fa-heart-o"></i> 22</span>
+                    </div>
+                    <div class="blog-text"><a href="" class="blog-link">Make an Awesome Art Portfolio For College Or
+                            University</a></div>
+                </div>
+                <div class="blog-block">
+                    <div class="blog-image-block">
+                        <img src="assets/images/art-design-5.jpg" alt="" class="blog-image">
+                        <span class="blog-fav"><i class="fa fa-heart-o"></i> 22</span>
+                    </div>
+                    <div class="blog-text"><a href="" class="blog-link">Make an Awesome Art Portfolio For College Or
+                            University</a></div>
+                </div>
+                <div class="blog-block">
+                    <div class="blog-image-block">
+                        <img src="assets/images/art-design-6.jpg" alt="" class="blog-image">
+                        <span class="blog-fav"><i class="fa fa-heart-o"></i> 22</span>
+                    </div>
+                    <div class="blog-text"><a href="" class="blog-link">Make an Awesome Art Portfolio For College Or
+                            University</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-blog bg-lightgray">
+            <div class="captions">
+                <div class="main-heading">Latest Blog</div>
+                <div class="sub-heading">RECENT BLOGS ABOUT ART & DESIGN</div>
+            </div>
+            <div class="latest-blog-container">
+                <div class="latest-block">
+                    <div class="latest-block-img">
+                        <img src="assets/images/blog-p-1.jpg" class="responsive" alt="">
+                        <span class="latest-block-icon"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="latest-block-content">
+                        <div class="latest-block-date">20 January, 2024</div>
+                        <div class="latest-block-heading">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="latest-block-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora vel perferendis, libero maxime aliquam voluptatibus?</div>
+                        <button type="button" class="latest-block-btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+                <div class="latest-block">
+                    <div class="latest-block-img">
+                        <img src="assets/images/blog-p-2.jpg" class="responsive" alt="">
+                        <span class="latest-block-icon"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="latest-block-content">
+                        <div class="latest-block-date">20 January, 2024</div>
+                        <div class="latest-block-heading">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="latest-block-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora vel perferendis, libero maxime aliquam voluptatibus?</div>
+                        <button type="button" class="latest-block-btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+                <div class="latest-block">
+                    <div class="latest-block-img">
+                        <img src="assets/images/blog-p-3.jpg" class="responsive" alt="">
+                        <span class="latest-block-icon"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="latest-block-content">
+                        <div class="latest-block-date">20 January, 2024</div>
+                        <div class="latest-block-heading">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="latest-block-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora vel perferendis, libero maxime aliquam voluptatibus?</div>
+                        <button type="button" class="latest-block-btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+                <div class="latest-block">
+                    <div class="latest-block-img">
+                        <img src="assets/images/blog-p-4.jpg" class="responsive" alt="">
+                        <span class="latest-block-icon"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="latest-block-content">
+                        <div class="latest-block-date">20 January, 2024</div>
+                        <div class="latest-block-heading">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="latest-block-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora vel perferendis, libero maxime aliquam voluptatibus?</div>
+                        <button type="button" class="latest-block-btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+                <div class="latest-block">
+                    <div class="latest-block-img">
+                        <img src="assets/images/blog-p-5.jpg" class="responsive" alt="">
+                        <span class="latest-block-icon"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="latest-block-content">
+                        <div class="latest-block-date">20 January, 2024</div>
+                        <div class="latest-block-heading">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="latest-block-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora vel perferendis, libero maxime aliquam voluptatibus?</div>
+                        <button type="button" class="latest-block-btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+                <div class="latest-block">
+                    <div class="latest-block-img">
+                        <img src="assets/images/blog-p-6.jpg" class="responsive" alt="">
+                        <span class="latest-block-icon"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="latest-block-content">
+                        <div class="latest-block-date">20 January, 2024</div>
+                        <div class="latest-block-heading">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="latest-block-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora vel perferendis, libero maxime aliquam voluptatibus?</div>
+                        <button type="button" class="latest-block-btn"><a href="#">READ MORE</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-desc">
+            <div class="my-desc-container">
+                <div class="my-desc-img-block" id="first-child">
+                    <img src="assets/images/about-bg.jpg" class="my-desc-img" alt="">
+                </div>
+                <div class="my-desc-content-block" id="last-child">
+                    <div class="captions">
+                        <div class="main-heading">Catherine Doe</div>
+                        <div class="sub-heading">ART & DESIGN IS MY PASSION</div>
+                    </div>
+                    <div class="my-desc-content">
+                        <p class="first-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ipsum
+                            officiis cupiditate possimus quas itaque debitis quaerat, numquam rem quibusdam soluta
+                            delectus corrupti unde rerum. Facilis, at? Exercitationem incidunt, dolores dolorum sint
+                            temporibus ducimus nemo qui. Tempora ratione reprehenderit magnam?</p>
+                        <p class="second-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+                            beatae iure repellat error recusandae aspernatur asperiores totam, assumenda pariatur
+                            numquam sapiente? Impedit possimus assumenda esse laboriosam quisquam dignissimos
+                            voluptate at, repellendus dolorum beatae neque non deleniti, earum laudantium atque. Ut!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="social-icons">
+            <a href="" class="icon-container"><i class="fa fa-facebook-f"></i></a>
+            <a href="" class="icon-container"><i class="fa fa-twitter"></i></a>
+            <a href="" class="icon-container"><i class="fa fa-instagram"></i></a>
+            <a href="" class="icon-container"><i class="fa fa-pinterest"></i></a>
+        </div>
+        <div class="copyright">&copy; Art Blog Page | All Rights Reserved</div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
